@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.bharatcoder.peekaboo</groupId>
+  <artifactId>vertex-skeleton</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0.0-SNAPSHOT</version>
+
+  <name>Vert.x Skeletal Project</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <source_jdk_version>1.8</source_jdk_version>
+    <target_jdk_version>1.8</target_jdk_version>
+
+    <!-- Plugin Version -->
+    <antrun.plugin.version>1.8</antrun.plugin.version>
+    <assembly.plugin.version>2.4</assembly.plugin.version>
+    <buildnumber.plugin.version>1.4</buildnumber.plugin.version>
+    <clean.plugin.version>3.0.0</clean.plugin.version>
+    <compiler.plugin.version>3.5.1</compiler.plugin.version>
+    <jar.plugin.version>3.0.2</jar.plugin.version>
+    <maven-shade-plugin.version>2.3</maven-shade-plugin.version>
+    <pu.plugin.version>1.0</pu.plugin.version>
+    <surefire.plugin.version>2.19.1</surefire.plugin.version>
+    <war.plugin.version>3.0.0</war.plugin.version>
+    <!-- Plugin Version End -->
+
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-core</artifactId>
+      <version>3.4.1</version>
+    </dependency>
+  </dependencies>
+
+</project>
