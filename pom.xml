@@ -11,26 +11,26 @@
   <name>Vert.x Skeletal Project</name>
 
   <properties>
-  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  <java.version>1.8</java.version>
-  <source_jdk_version>1.8</source_jdk_version>
-  <target_jdk_version>1.8</target_jdk_version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <source_jdk_version>1.8</source_jdk_version>
+    <target_jdk_version>1.8</target_jdk_version>
 
-  <!-- Plugin Version -->
-  <antrun.plugin.version>1.8</antrun.plugin.version>
-  <assembly.plugin.version>2.4</assembly.plugin.version>
-  <buildnumber.plugin.version>1.4</buildnumber.plugin.version>
-  <clean.plugin.version>3.0.0</clean.plugin.version>
-  <compiler.plugin.version>3.5.1</compiler.plugin.version>
-  <jar.plugin.version>3.0.2</jar.plugin.version>
-  <maven-shade-plugin.version>2.3</maven-shade-plugin.version>
-  <pu.plugin.version>1.0</pu.plugin.version>
-  <surefire.plugin.version>2.19.1</surefire.plugin.version>
-  <war.plugin.version>3.0.0</war.plugin.version>
+    <!-- Plugin Version -->
+    <antrun.plugin.version>1.8</antrun.plugin.version>
+    <assembly.plugin.version>2.4</assembly.plugin.version>
+    <buildnumber.plugin.version>1.4</buildnumber.plugin.version>
+    <clean.plugin.version>3.0.0</clean.plugin.version>
+    <compiler.plugin.version>3.5.1</compiler.plugin.version>
+    <jar.plugin.version>3.0.2</jar.plugin.version>
+    <maven-shade-plugin.version>2.3</maven-shade-plugin.version>
+    <pu.plugin.version>1.0</pu.plugin.version>
+    <surefire.plugin.version>2.19.1</surefire.plugin.version>
+    <war.plugin.version>3.0.0</war.plugin.version>
 
-  <!-- Plugin Version End -->
-  <vertx.version>3.4.1</vertx.version>
-  <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
+    <!-- Plugin Version End -->
+    <vertx.version>3.4.1</vertx.version>
+    <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
   </properties>
 
   <dependencies>
@@ -41,17 +41,31 @@
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
 
-    <!--<dependency>-->
-      <!--<groupId>io.vertx</groupId>-->
-      <!--<artifactId>vertx-web</artifactId>-->
-      <!--<version>${vertx.version}</version>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-      <!--<groupId>io.vertx</groupId>-->
-      <!--<artifactId>vertx-unit</artifactId>-->
-      <!--<version>${vertx.version}</version>-->
-      <!--<scope>test</scope>-->
-    <!--</dependency>-->
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-unit</artifactId>
+      <version>${vertx.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-web</artifactId>
+      <version>${vertx.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.10</version>
+      <scope>provided</scope>
+    </dependency>
+
   </dependencies>
 
   <build>
